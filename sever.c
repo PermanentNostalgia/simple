@@ -47,7 +47,7 @@ int main(void) {
 	
 		printf("상대방> %s\n",buf);
 		printf("나> ");
-		scanf("%s",buf);
+		gets(buf);
 		
 		if(strcmp(buf,"EXIT")==0) {
 			break;
@@ -57,6 +57,7 @@ int main(void) {
 	}
 	
 	closesocket(sock);
+	closesocket(sub_sock);
 	WSACleanup();
 	
 	return 0;
