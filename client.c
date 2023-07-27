@@ -19,7 +19,7 @@ int main(void) {
 	
 	char ip_addr[16];
 	printf("접속할 아이피를 입력하세요: ");
-	scanf("%s",ip_addr);
+	gets(ip_addr);
 	
 	// 주소 구조체 초기화
 	memset(&addr, 0, sizeof(addr));
@@ -35,7 +35,7 @@ int main(void) {
 	char buf[500];
 	while(1) {
 		printf("나> ");
-		scanf("%s",buf);
+		gets(buf);
 		
 		if(strcmp(buf,"EXIT")==0) {
 			break;
